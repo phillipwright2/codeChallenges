@@ -1,0 +1,18 @@
+var shoppingcart = angular.module('shoppingcart', []);
+
+shoppingcart.controller('GroceriesCtrl', function
+    ($scope, $http) {
+    $scope.food = [
+        {'name': 'veggies',
+         'snippet': 'Good just got better.',
+         'age': 5},
+        {'name': 'meat',
+        'snippet': 'Best meat in town!',
+        'age': 3},
+        {'name': 'dairy',
+        'snippet': 'best taisting mustaches in the world',
+        'age': 1}
+    ];
+    $scope.orderProp = 'age';
+    $scope.orderProp2 = 'heit';
+});
